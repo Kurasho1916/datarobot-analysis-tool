@@ -15,9 +15,9 @@ os.environ["HTTPS_PROXY"] = "http://172.17.20.158:3128"
 os.environ["REQUESTS_CA_BUNDLE"] = CA
 os.environ["SSL_CERT_FILE"] = CA
 
-import datarobot as dr
-from datarobot.enums import INSIGHTS_SOURCES
-from datarobot import insights
+# import datarobot as dr
+# from datarobot.enums import INSIGHTS_SOURCES
+# from datarobot import insights
 
 # 日本語フォント設定
 plt.rcParams['font.sans-serif'] = ['MS Gothic', 'Yu Gothic', 'Meiryo']
@@ -748,4 +748,5 @@ elif mode == "📊 分析実行":
     
     else:
         st.info("👆 上の「🚀 データ読み込み」ボタンをクリックしてください")
+
         st.info("💡 モデルIDが正しいか確認するには「🔍 接続診断」モードを使用してください")
